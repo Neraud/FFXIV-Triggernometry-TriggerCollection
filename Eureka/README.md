@@ -26,8 +26,6 @@ These triggers were provided by Rin Reinfell on the [Eurekan Explorers discord](
 
 Zones : Euraka Pagos only
 
-**Warning** : as of the creation of these triggers, the FFXIV ACT Plugin hasn't been updated for Pagos yet. It still lists the zone as "Unknown Zone (2Fb)". This filter will need to be changed once the plugin is updated.
-
 Jobs : All
 
 ## Triggers

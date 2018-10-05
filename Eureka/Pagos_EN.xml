@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="73d12e93-7f14-4ce3-8fda-abdb6481d12e" ZoneFilterRegularExpression="Unknown\ Zone\ \(2Fb\)" EventFilterRegularExpression="" Name="Pagos" Enabled="true">
+  <ExportedFolder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="73d12e93-7f14-4ce3-8fda-abdb6481d12e" ZoneFilterRegularExpression="Eureka\ Pagos" EventFilterRegularExpression="" Name="Pagos" Enabled="true">
     <Folders>
       <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="97035d53-fbf8-4d38-b0db-e15b62fcf0e3" ZoneFilterRegularExpression="" EventFilterRegularExpression="" Name="Level 20 - 29" Enabled="true">
         <Folders />
