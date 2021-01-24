@@ -38,6 +38,10 @@
           <Action OrderNumber="3" AuraName="" AuraImage="" AuraImageMode="Normal" AuraXIniExpression="" AuraYIniExpression="" AuraWIniExpression="" AuraHIniExpression="" AuraOIniExpression="" AuraXTickExpression="" AuraYTickExpression="" AuraWTickExpression="" AuraHTickExpression="" AuraOTickExpression="" AuraTTLTickExpression="" TextAuraName="" TextAuraExpression="" TextAuraAlignment="MiddleCenter" TextAuraXIniExpression="" TextAuraYIniExpression="" TextAuraWIniExpression="" TextAuraHIniExpression="" TextAuraOIniExpression="" TextAuraXTickExpression="" TextAuraYTickExpression="" TextAuraWTickExpression="" TextAuraHTickExpression="" TextAuraOTickExpression="" TextAuraTTLTickExpression="" TextAuraFontName="Microsoft Sans Serif" TextAuraFontSize="8.25" TextAuraEffect="None" TextAuraUseOutline="false" Enabled="true" ActionType="Trigger" ExecutionDelayExpression="0" Asynchronous="true" RefireInterrupt="true" RefireRequeue="true" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundFileExpression="" PlaySoundVolumeExpression="100" PlaySoundExclusive="true" UseTTSTextExpression="" UseTTSVolumeExpression="100" UseTTSRateExpression="0" UseTTSExclusive="true" LaunchProcessPathExpression="" LaunchProcessCmdlineExpression="" LaunchProcessWorkingDirExpression="" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" ExecScriptAssembliesExpression="" ExecScriptExpression="" MessageBoxIconType="None" MessageBoxText="" VariableOp="Unset" VariableName="" VariableExpression="" DiscordWebhookURL="" DiscordWebhookMessage="" TriggerOp="CancelTrigger" TriggerText="" TriggerZone="" TriggerForce="" TriggerId="96737d00-5372-4b01-86b5-2c96b2e5528d" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" KeyPressExpression="">
             <Conditions />
           </Action>
+          <Action OrderNumber="4" LogLevel="-1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="CancelTrigger" TriggerId="cd60870e-b348-42b8-bdc3-b79b2932ffa3" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
         </Actions>
         <Conditions />
       </Trigger>
@@ -50,6 +54,18 @@
         <Conditions>
           <Condition OrderNumber="1" ExpressionL="$1" ExpressionTypeL="Numeric" ExpressionR="10" ExpressionTypeR="Numeric" ConditionType="NumericGreater" Enabled="true" />
         </Conditions>
+      </Trigger>
+      <Trigger Enabled="true" Name="Battle commencing in 15 seconds" Id="cd60870e-b348-42b8-bdc3-b79b2932ffa3" RegularExpression="Battle commencing in ([0-9]+) seconds">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="15" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="($1-15)*1000" RefireInterrupt="True">
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="And">
+          <ConditionSingle Enabled="true" ExpressionL="$1" ExpressionTypeL="Numeric" ExpressionR="15" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+        </Condition>
+        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>

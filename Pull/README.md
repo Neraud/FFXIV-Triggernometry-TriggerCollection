@@ -30,6 +30,7 @@ However It appears that the game only reminds when at least 5 seconds have passe
 These triggers are built together to announce a pull countdown with forced reminder (even if the game doesn't have a reminder for it):
 
 - the initial countdown
+- a forced 15 sec reminder
 - a forced 10 sec reminder
 - a forced 7 sec reminder for RDM
 
